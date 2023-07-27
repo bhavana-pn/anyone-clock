@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anyone-Clock</title>
+    <link rel="stylesheet" href="static/clock.css">
+</head>
+<body>
+    <div id="form_div">
+        <form action="/", method="post">
+            <!-- Enter the Name: <input type="text" class="do" name="name" placeholder="Name">
+            <button type="submit" class="do_button" name="do_button" value="do_button">Submit</button> -->
+            <label for="name">Name</label>:
+            <select name="name" id="name">
+                <option value="">--Select--</option>
+                {% for name in names %}
+                    <option value="{{ name }}">{{ name }}<option>
+                {% endfor %}
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

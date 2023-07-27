@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../static/clock.css?rnd=23">
+    
+</head>
+<body>
+    <div id="clockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+        <!-- <img src="{{ url_for('static', filename='images/clock.png') }}" > -->
+    </div>
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<script>
+$( document ).ready(function() {
+    // console.log( "ready!" );
+
+    var htmlTitle = "AK's Thunivu Clock";
+
+    $(document).attr("title", htmlTitle);
+});
+</script>
+<script src="../static/clock.js"></script>
+
+</body>
+</html>
